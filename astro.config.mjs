@@ -12,7 +12,7 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: 'Nintendo Switch',
-					autogenerate: { directory: 'switch' },
+					items: [{ autogenerate: { directory: 'switch' } }],
 				},
 			],
 		}),
