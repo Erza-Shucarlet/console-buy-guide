@@ -7,7 +7,7 @@ export default defineConfig({
 	site: 'https://chubbyducky.com',
 	integrations: [
 		starlight({
-			title: '游戏机选购指南',
+			title: '胖黄鸭的游戏机选购指南',
 			defaultLocale: 'zh-CN',
 			sidebar: [
 				{
