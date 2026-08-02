@@ -1,10 +1,39 @@
 ---
 title: 游戏机选购指南
-description: 帮你选到最合适的游戏主机
+description: 帮你选到最合适的游戏主机——Nintendo Switch 一代、二代选购攻略
+template: splash
+hero:
+  tagline: 选对游戏机，少花冤枉钱
+  image:
+    file: ../../assets/houston.webp
+  actions:
+    - text: 🎮 开始选购
+      link: /switch/
+      icon: right-arrow
+      variant: primary
+    - text: Switch 二代
+      link: /switch/nintendo_switch_2/nintendo_switch_2/
+      icon: right-arrow
+      variant: minimal
 ---
 
-## 目前有：
+import { Card, CardGrid } from '@astrojs/starlight/components';
 
-- [Nintendo Switch 选购指南](/switch/)
+## 快速开始
 
-更多主机选购指南正在路上～
+<CardGrid stagger>
+  <Card title="🕹️ Nintendo Switch 选购指南" icon="open-book">
+    从一代到二代，型号、版本、配件一网打尽
+    [开始查看 →](/switch/)
+  </Card>
+  <Card title="📦 Switch 一代回顾" icon="puzzle">
+    四个型号怎么选？初代/续航/OLED/Lite 一文看懂
+    [回顾一代 →](/switch/nintendo_switch_1/nintendo_switch_1/)
+  </Card>
+  <Card title="🎮 Switch 二代详解" icon="information">
+    4K 输出 · 磁吸手柄 · 性能飞跃，全面升级
+    [了解详情 →](/switch/nintendo_switch_2/nintendo_switch_2/)
+  </Card>
+</CardGrid>
+
+> 🎯 **一句话建议**：没买过 Switch → 直接入二代；预算有限 → 一代续航版/Lite 二手性价比极高。
