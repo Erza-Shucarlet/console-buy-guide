@@ -1,6 +1,6 @@
 ---
-title: Nintendo Switch 初代值得买吗？
-description: Nintendo Switch 初代适合谁？了解四型号区别、优缺点、价格和购买建议，帮你判断是否值得入手。
+title: Nintendo Switch 初代选购指南
+description: Nintendo Switch 初代值得买吗？适合谁？了解四型号区别、优缺点、价格和购买建议，帮你判断是否值得入手。
 sidebar:
   order: 1
 ---

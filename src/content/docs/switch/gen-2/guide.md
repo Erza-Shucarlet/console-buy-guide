@@ -1,5 +1,5 @@
 ---
-title: Nintendo Switch 2 值得买吗？
+title: Nintendo Switch 2 选购指南
 description: Nintendo Switch 2 值得升级吗？全面解析性能、价格、涨价信息与购买建议，帮你判断是否适合入手。
 sidebar:
   order: 2

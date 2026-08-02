@@ -1,40 +1,75 @@
-/* 侧边栏美化 — 基于 Kimi K3 设计 */
+/* 侧边栏 — 基于设计师预览 */
+/* 配色: 深色底 + 紫色 accent (#7c6ff7) */
 
-/* 菜单项：圆角 + 呼吸间距 */
+:root {
+  --sl-color-accent: #7c6ff7;
+  --sl-color-accent-low: #2e2566;
+  --sl-sidebar-width: 16rem;
+}
+
+/* 顶部标题 */
+.site-title {
+  font-weight: 700;
+  font-size: 18px;
+  background: linear-gradient(135deg, #7c6ff7 30%, #c4b5fd 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* 分组标题 — 小写大写风格 */
+.sidebar-pane .group-label > span {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  opacity: .7;
+}
+
+/* 菜单链接 */
 .sidebar-pane .top-level li a {
-  border-radius: 8px;
-  margin: 2px 6px;
-  padding: 8px 14px;
-  transition: background-color 0.15s ease;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  margin: 1px 6px;
+  transition: all .15s;
 }
 
 /* 悬停 */
 .sidebar-pane .top-level li a:hover {
-  background-color: var(--sl-color-gray-6);
+  background: rgba(255,255,255,.04);
 }
 
-/* 当前激活项 — 蓝色药丸高亮 */
+/* 激活 — 紫色高亮，白色文字 */
 .sidebar-pane .top-level li a[aria-current="page"] {
-  background-color: var(--sl-color-accent-low);
-  color: var(--sl-color-accent-high);
+  background: var(--sl-color-accent-low);
+  color: #fff;
   font-weight: 600;
-  border-radius: 0 9999px 9999px 0;
-  padding-left: 20px;
 }
 
-/* 分组标签 */
-.sidebar-pane .group-label > span {
-  font-weight: 700;
-  font-size: 0.85em;
-  letter-spacing: 0.04em;
-  opacity: 0.8;
+/* 右侧目录 — 缩小 + 中文化 */
+.right-sidebar {
+  width: 12rem !important;
 }
-
-/* 展开箭头 */
-.sidebar-pane summary .caret {
-  opacity: 0.5;
-  transition: opacity 0.15s;
+.right-sidebar starlight-toc {
+  font-size: 13px;
 }
-.sidebar-pane summary:hover .caret {
-  opacity: 1;
+/* 替换 "On this page" */
+.right-sidebar nav > :first-child {
+  font-size: 0;
+}
+.right-sidebar nav > :first-child::after {
+  content: "本页目录";
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+/* 翻译 "Overview" */
+.right-sidebar a[href="#_top"] {
+  font-size: 0;
+}
+.right-sidebar a[href="#_top"]::after {
+  content: "概览";
+  font-size: 13px;
 }

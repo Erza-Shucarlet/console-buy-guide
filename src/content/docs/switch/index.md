@@ -11,8 +11,8 @@ sidebar:
 
 ## 快速导航
 
-- 📦 **[Switch 一代回顾](/switch/gen-1/)** — 初代/续航版/OLED/Lite 四型号详解，含国行避坑指南
-- 🎮 **[Switch 二代详解](/switch/gen-2/)** — 全面升级解析，涨价预警 + 购买建议
+- 📦 **[Switch 一代回顾](/switch/gen-1/guide/)** — 初代/续航版/OLED/Lite 四型号详解，含国行避坑指南
+- 🎮 **[Switch 二代详解](/switch/gen-2/guide/)** — 全面升级解析，涨价预警 + 购买建议
 
 :::tip[🎯 一句话建议]
 **没买过 Switch → 直接入二代**；预算有限 → 一代续航版/Lite 二手性价比极高。千万不要碰国行和初代！
