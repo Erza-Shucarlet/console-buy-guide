@@ -9,7 +9,10 @@ export default defineConfig({
 		starlight({
 			title: '🎮 胖黄鸭的游戏机选购指南',
 			customCss: ['/src/styles/custom.css'],
-			defaultLocale: 'zh-CN',
+			defaultLocale: 'root',
+			locales: {
+				root: { label: '简体中文', lang: 'zh-CN' },
+			},
 			favicon: '/favicon.png',
 			head: [
 				{ tag: 'link', attrs: { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32.png' } },
