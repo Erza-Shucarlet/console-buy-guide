@@ -23,3 +23,6 @@ pnpm-debug.log*
 # Project context files
 CLAUDE.md
 AGENTS.md
+
+# Local templates
+templates/
