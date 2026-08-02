@@ -4,7 +4,28 @@
 :root {
   --sl-color-accent: #7c6ff7;
   --sl-color-accent-low: #2e2566;
-  --sl-sidebar-width: 18rem;
+  --sl-sidebar-width: 20rem;
+  --sl-content-width: 56rem;
+}
+
+/* ── P1 浅色模式适配 ── */
+:root[data-theme='light'] {
+  --sl-color-accent: #6d5ef0;
+  --sl-color-accent-low: #ede9fe;
+}
+
+/* 浅色模式下侧边栏 hover / 引导线用深色半透明 */
+:root[data-theme='light'] .sidebar-pane .top-level li a:hover {
+  background: rgba(0, 0, 0, .05);
+}
+:root[data-theme='light'] .sidebar-pane .top-level ul ul {
+  border-left-color: rgba(0, 0, 0, .08);
+}
+
+/* 浅色模式下激活项：淡紫底 + 深紫字 */
+:root[data-theme='light'] .sidebar-pane .top-level li a[aria-current="page"] {
+  background: var(--sl-color-accent-low);
+  color: #3b3663;
 }
 
 /* 顶部标题 */
@@ -17,13 +38,33 @@
   background-clip: text;
 }
 
+/* ── 左侧侧边栏 ── */
+
 /* 分组标题 — 小写大写风格 */
 .sidebar-pane .group-label > span {
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .08em;
-  opacity: .7;
+  opacity: .6;
+}
+
+/* 分组间距 */
+.sidebar-pane .top-level > li {
+  margin-top: 12px;
+}
+.sidebar-pane .top-level > li:first-child {
+  margin-top: 0;
+}
+
+/* 折叠箭头 — 悬停放大变色 */
+.sidebar-pane summary .caret {
+  opacity: .4;
+  transition: all .15s ease;
+}
+.sidebar-pane summary:hover .caret {
+  opacity: 1;
+  color: var(--sl-color-accent);
 }
 
 /* 菜单链接 */
@@ -32,7 +73,14 @@
   padding: 6px 12px;
   border-radius: 6px;
   margin: 1px 6px;
-  transition: all .15s;
+  transition: all .15s ease;
+}
+
+/* 子项缩进带引导线 */
+.sidebar-pane .top-level ul ul {
+  border-left: 1px solid var(--sl-border-color, rgba(255,255,255,.06));
+  margin-left: 18px;
+  padding-left: 0;
 }
 
 /* 悬停 */
@@ -40,20 +88,22 @@
   background: rgba(255,255,255,.04);
 }
 
-/* 激活 — 紫色高亮，白色文字 */
+/* 激活 — 药丸形高亮 + 紫色左边线 */
 .sidebar-pane .top-level li a[aria-current="page"] {
   background: var(--sl-color-accent-low);
   color: #fff;
   font-weight: 600;
+  border-radius: 0 9999px 9999px 0;
+  border-left: 2px solid var(--sl-color-accent);
+  padding-left: 14px;
+  margin-left: 4px;
 }
 
-/* 右侧目录 — 缩小 + 中文化 */
-.right-sidebar {
-  width: 12rem !important;
-}
+/* ── 右侧目录 ── */
 .right-sidebar starlight-toc {
   font-size: 13px;
 }
+
 /* 替换 "On this page" */
 .right-sidebar nav > :first-child {
   font-size: 0;
@@ -65,6 +115,7 @@
   text-transform: uppercase;
   letter-spacing: .08em;
 }
+
 /* 翻译 "Overview" */
 .right-sidebar a[href="#_top"] {
   font-size: 0;
@@ -72,4 +123,79 @@
 .right-sidebar a[href="#_top"]::after {
   content: "概览";
   font-size: 13px;
+}
+
+/* ── P0 可读性优化 ── */
+
+/* 正文图片：缩小居中 + 圆角 + 轻阴影 */
+.sl-markdown-content img {
+  display: block;
+  max-width: min(420px, 100%);
+  margin: 1.5rem auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, .18);
+}
+:root[data-theme='light'] .sl-markdown-content img {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, .08);
+}
+
+/* 顶部"最后更新日期"引用块 → 轻量小徽章
+   精准匹配：位于正文最顶部、且只有一行 <p> 的 blockquote（日期行） */
+.sl-markdown-content > blockquote:first-of-type:has(> p:only-child):first-child {
+  border: none;
+  padding: 0;
+  margin: 0 0 1rem;
+  background: none;
+}
+.sl-markdown-content > blockquote:first-of-type:has(> p:only-child):first-child > p {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--sl-color-gray-3);
+  background: var(--sl-color-gray-6);
+  padding: 3px 10px;
+  border-radius: 9999px;
+  margin: 0;
+}
+
+/* 表格美化：圆角卡片 + 表头底色 + 斑马纹 + hover */
+.sl-markdown-content table {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--sl-color-hairline);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .10);
+  display: block;
+  overflow-x: auto;
+  width: fit-content;
+  max-width: 100%;
+  margin-inline: auto;
+}
+.sl-markdown-content thead th {
+  background: var(--sl-color-accent-low);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  white-space: nowrap;
+}
+:root[data-theme='light'] .sl-markdown-content thead th {
+  background: #ede9fe;
+  color: #3b3663;
+}
+.sl-markdown-content tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, .03);
+}
+:root[data-theme='light'] .sl-markdown-content tbody tr:nth-child(even) {
+  background: rgba(0, 0, 0, .025);
+}
+.sl-markdown-content tbody tr {
+  transition: background .12s ease;
+}
+.sl-markdown-content tbody tr:hover {
+  background: rgba(124, 111, 247, .10);
+}
+:root[data-theme='light'] .sl-markdown-content tbody tr:hover {
+  background: rgba(124, 111, 247, .08);
+}
+.sl-markdown-content td,
+.sl-markdown-content th {
+  padding: 10px 16px;
 }

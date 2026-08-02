@@ -10,11 +10,17 @@ export default defineConfig({
 			title: '🎮 胖黄鸭的游戏机选购指南',
 			customCss: ['/src/styles/custom.css'],
 			defaultLocale: 'zh-CN',
+			favicon: '/favicon.png',
+			head: [
+				{ tag: 'link', attrs: { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32.png' } },
+				{ tag: 'link', attrs: { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16.png' } },
+				{ tag: 'link', attrs: { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' } },
+			],
 			sidebar: [
 				{
 					label: '🎮 Nintendo Switch',
 					items: [
-						{ label: '📋 选购指南', link: '/switch/' },
+						{ label: '📋 选购指南', link: '/switch/switch-index/' },
 						{
 							label: '🕹️ 一代回顾',
 							items: [{ autogenerate: { directory: 'switch/gen-1' } }],

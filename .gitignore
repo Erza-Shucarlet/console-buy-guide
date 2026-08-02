@@ -29,3 +29,6 @@ templates/
 
 # Claude/Hermes agent skills (local)
 .claude/
+
+# Obsidian workspace (local)
+.obsidian/

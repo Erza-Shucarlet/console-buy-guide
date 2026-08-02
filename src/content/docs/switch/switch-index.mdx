@@ -1,9 +1,20 @@
 ---
-title: Nintendo Switch 选购指南：初代 vs Switch 2
+title: 胖黄鸭的游戏机选购指南
 description: 比较 Nintendo Switch 初代与 Switch 2 的核心差异——性能、屏幕、价格、适合人群，帮你决定买哪台。
-sidebar:
-  order: 0
+template: splash
+hero:
+  tagline: 选对游戏机，少花冤枉钱
+  actions:
+    - text: 🎮 开始选购
+      link: /switch/gen-2/guide/
+      icon: right-arrow
+      variant: primary
+    - text: 📋 两代对比速览
+      link: '#两代核心差异速览'
+      variant: minimal
 ---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
 
 > 本文最后更新日期：2026-08-02
 
@@ -11,8 +22,18 @@ sidebar:
 
 ## 快速导航
 
-- 📦 **[Switch 一代回顾](/switch/gen-1/guide/)** — 初代/续航版/OLED/Lite 四型号详解，含国行避坑指南
-- 🎮 **[Switch 二代详解](/switch/gen-2/guide/)** — 全面升级解析，涨价预警 + 购买建议
+<CardGrid stagger>
+	<Card title="📦 Switch 一代回顾" icon="open-book">
+		初代 / 续航版 / OLED / Lite 四型号详解，含国行避坑指南。预算有限看这篇。
+
+		[进入一代回顾 →](/switch/gen-1/guide/)
+	</Card>
+	<Card title="🚀 Switch 二代详解" icon="rocket">
+		全面升级解析 + 涨价预警 + 购买建议。没买过 Switch 直接看这篇。
+
+		[进入二代详解 →](/switch/gen-2/guide/)
+	</Card>
+</CardGrid>
 
 :::tip[🎯 一句话建议]
 **没买过 Switch → 直接入二代**；预算有限 → 一代续航版/Lite 二手性价比极高。千万不要碰国行和初代！
