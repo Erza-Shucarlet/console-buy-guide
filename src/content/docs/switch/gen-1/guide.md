@@ -11,7 +11,7 @@ sidebar:
 
 ## 1. Nintendo Switch 初代
 
-![初代 Switch](/switch-gen1.webp)
+![初代 Switch](../../images/switch-gen1.webp)
 
 - **发售时间**：2017 年 3 月
 - **状态**：🚫 已停产
@@ -20,7 +20,7 @@ sidebar:
 
 ## 2. Nintendo Switch 续航版
 
-![续航版 Switch](/switch-v2.webp)
+![续航版 Switch](../../images/switch-v2.webp)
 
 - **发售时间**：2019 年 8 月
 - **状态**：⚠️ 逐步退市（Switch 2 发布后一代全系减产）
@@ -38,7 +38,7 @@ sidebar:
 
 ## 3. Nintendo Switch OLED
 
-![OLED Switch](/switch-oled.webp)
+![OLED Switch](../../images/switch-oled.webp)
 
 - **发售时间**：2021 年 10 月
 - **状态**：⚠️ 逐步退市（一代最终旗舰）
@@ -55,7 +55,7 @@ OLED 版是续航版的"上位替代"，被誉为**一代机里的最终形态**
 
 ## 4. Nintendo Switch Lite
 
-![Switch Lite](/switch-lite.webp)
+![Switch Lite](../../images/switch-lite.webp)
 
 - **发售时间**：2019 年 9 月
 - **状态**：✅ 在售（欧洲 2026 年因欧盟法规停售，北美/日本仍可购买）
@@ -91,7 +91,7 @@ Switch 家族中**唯一的纯掌机**，砍掉了 TV 输出和可拆卸手柄�
 
 国行机型的包装盒右上角有 **"国行正品"蓝色标志**（见图）：
 
-![国行正品标志](/guohang-logo.webp)
+![国行正品标志](../../images/guohang-logo.webp)
 
 :::danger[🚫 千万不要买国行！]
 腾讯宣布于 **2026 年 3 月 31 日** 起逐步关闭国行 Switch 的网络功能、eShop 及相关在线服务。关闭后国行机器基本丧失了正常游玩的大部分功能。

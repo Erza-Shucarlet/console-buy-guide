@@ -9,7 +9,7 @@ sidebar:
 
 **Switch 2 适合准备长期使用、重视性能和新作支持的玩家。** 如果你已有一代且只玩老游戏，升级并不急迫。本文详解所有变化和购买建议。
 
-![Nintendo Switch 2](/switch2.webp)
+![Nintendo Switch 2](../../images/switch2.webp)
 
 :::caution[💰 涨价预警]
 美国 9 月起从 $449.99 涨至 **$499.99**，日本已涨 ¥10,000。详细涨幅见下方表格，建议趁早入手。
@@ -80,7 +80,7 @@ sidebar:
 - 🔒 系统语言**锁死日文**，游戏语言跟随系统也锁日文
 - 🔍 识别方法：包装盒标注"日本国内専用"或有特殊标识
 
-![日版特供标识](/switch2-jp-lock.webp)
+![日版特供标识](../../images/switch2-jp-lock.webp)
 
 :::danger[⚠️ 日版购买须知]
 第三方平台低价日版大概率是特供机，**购买前务必向卖家确认系统语言是否可切换**。
@@ -99,7 +99,7 @@ Switch 2 部分实体卡带是**"钥匙卡"**——卡带本身不含游戏数�
 
 包装盒下半部分会有以下标识（如图）：
 
-![钥匙卡标识](/switch2-keycard.webp)
+![钥匙卡标识](../../images/switch2-keycard.webp)
 
 💡 Switch 2 **仅支持 microSD Express 卡**（普通 microSD 不兼容）。256GB 机身存储在钥匙卡 + 数字版游戏的组合下可能不够用，重度玩家建议提前备好 microSD Express 卡。
 
