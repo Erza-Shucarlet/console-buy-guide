@@ -1,21 +1,19 @@
 ---
-title: Nintendo Switch 二代
-description: Nintendo Switch 2 相比一代的全面升级——4K 输出、磁吸手柄、性能飞跃，一篇搞懂是否值得入手。
+title: Nintendo Switch 2 值得买吗？
+description: Nintendo Switch 2 值得升级吗？全面解析性能、价格、涨价信息与购买建议，帮你判断是否适合入手。
 sidebar:
   order: 2
 ---
 
 > 本文最后更新日期：2026-08-02
 
-Nintendo Switch 2（以下简称 Switch 2）于 **2025 年 6 月 5 日** 全球发售，官方定价 **$449.99（约 ¥3,299）**，是任天堂最新一代混合主机。⚠️ 但**2026 年 5 月 8 日任天堂已官宣全球涨价**（详见下方），建议趁早入手。如果你是新入坑玩家，Switch 2 是**最值得一步到位**的选择。
+**Switch 2 适合准备长期使用、重视性能和新作支持的玩家。** 如果你已有一代且只玩老游戏，升级并不急迫。本文详解所有变化和购买建议。
 
 ![Nintendo Switch 2](/switch2.webp)
 
-import { Aside } from '@astrojs/starlight/components';
-
-<Aside type="caution" title="💰 涨价预警">
+:::caution[💰 涨价预警]
 美国 9 月起从 $449.99 涨至 **$499.99**，日本已涨 ¥10,000。详细涨幅见下方表格，建议趁早入手。
-</Aside>
+:::
 
 ## 相比一代的核心升级
 
@@ -84,9 +82,9 @@ import { Aside } from '@astrojs/starlight/components';
 
 ![日版特供标识](/switch2-jp-lock.webp)
 
-<Aside type="danger" title="⚠️ 日版购买须知">
+:::danger[⚠️ 日版购买须知]
 第三方平台低价日版大概率是特供机，**购买前务必向卖家确认系统语言是否可切换**。
-</Aside>
+:::
 
 ### 2. 卡带兼容
 
@@ -114,6 +112,6 @@ Switch 2 部分实体卡带是**"钥匙卡"**——卡带本身不含游戏数�
 - 🇯🇵 **日版用户**：日本已于 5 月 25 日涨价 ¥10,000，当前价格已是新高。注意避开日版特供机
 - 🔄 **一代升级用户**：性能提升明显，但涨价后性价比有所下降
 
-<Aside type="tip" title="🎯 总结">
+:::tip[🎯 总结]
 没买过 Switch → 直接入 Switch 2；有一代 → 看预算，OLED 版用户升级动力相对小。
-</Aside>
+:::

@@ -1,13 +1,13 @@
 ---
-title: Nintendo Switch 一代
-description: Nintendo Switch 一代共有四个型号，从初代到 OLED 再到 Lite，一文搞懂各型号区别。
+title: Nintendo Switch 初代值得买吗？
+description: Nintendo Switch 初代适合谁？了解四型号区别、优缺点、价格和购买建议，帮你判断是否值得入手。
 sidebar:
   order: 1
 ---
 
 > 本文最后更新日期：2026-08-02
 
-Nintendo Switch 一代共经历了 **4 个型号** 的迭代。Switch 2 已于 2025 年 6 月发售，**初代和国行版已无入手意义**，但续航版、OLED 和 Lite 作为低价入门选择仍有一定市场。本文按发布时间梳理各型号。
+**预算有限、主要玩既有 Switch 游戏 → 选初代；追求性能和新作 → 上 Switch 2。** 本文梳理初代四个型号的区别，帮你快速判断哪个值得买。
 
 ## 1. Nintendo Switch 初代
 
@@ -32,11 +32,9 @@ Nintendo Switch 一代共经历了 **4 个型号** 的迭代。Switch 2 已于 2
 
 其余与初代完全一致（6.2 寸 LCD 屏幕、同款 Joy-Con）。续航版采用**全红色包装**，是**一代里性价比最高的型号**。二手市场仍有大量流通。
 
-import { Aside } from '@astrojs/starlight/components';
-
-<Aside type="tip" title="💡 选购建议">
+:::tip[💡 选购建议]
 预算有限、主要连电视玩的玩家，续航版二手是当前最优解。价格实惠，游戏库完整。
-</Aside>
+:::
 
 ## 3. Nintendo Switch OLED
 
@@ -69,9 +67,9 @@ Switch 家族中**唯一的纯掌机**，砍掉了 TV 输出和可拆卸手柄�
 - 🎮 **一体式十字键**：手感优于 Joy-Con 分体按键
 - 💰 **价格最低**（全新约 ¥1,000 左右，二手更低）
 
-<Aside type="caution" title="⚠️ 注意">
+:::caution[⚠️ 注意]
 不能连电视，手柄不可拆卸，部分体感游戏（如健身环大冒险）无法游玩。适合纯掌机玩家或作为第二台 Switch。
-</Aside>
+:::
 
 ---
 
@@ -95,8 +93,8 @@ Switch 家族中**唯一的纯掌机**，砍掉了 TV 输出和可拆卸手柄�
 
 ![国行正品标志](/guohang-logo.webp)
 
-<Aside type="danger" title="🚫 千万不要买国行！">
+:::danger[🚫 千万不要买国行！]
 腾讯宣布于 **2026 年 3 月 31 日** 起逐步关闭国行 Switch 的网络功能、eShop 及相关在线服务。关闭后国行机器基本丧失了正常游玩的大部分功能。
 
 至今偶尔有网店以低价国行机鱼目混珠，购买时**务必核对包装盒上的蓝色标志**，谨防上当。
-</Aside>
+:::

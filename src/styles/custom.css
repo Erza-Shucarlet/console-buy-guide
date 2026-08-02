@@ -1,0 +1,40 @@
+/* 侧边栏美化 — 基于 Kimi K3 设计 */
+
+/* 菜单项：圆角 + 呼吸间距 */
+.sidebar-pane .top-level li a {
+  border-radius: 8px;
+  margin: 2px 6px;
+  padding: 8px 14px;
+  transition: background-color 0.15s ease;
+}
+
+/* 悬停 */
+.sidebar-pane .top-level li a:hover {
+  background-color: var(--sl-color-gray-6);
+}
+
+/* 当前激活项 — 蓝色药丸高亮 */
+.sidebar-pane .top-level li a[aria-current="page"] {
+  background-color: var(--sl-color-accent-low);
+  color: var(--sl-color-accent-high);
+  font-weight: 600;
+  border-radius: 0 9999px 9999px 0;
+  padding-left: 20px;
+}
+
+/* 分组标签 */
+.sidebar-pane .group-label > span {
+  font-weight: 700;
+  font-size: 0.85em;
+  letter-spacing: 0.04em;
+  opacity: 0.8;
+}
+
+/* 展开箭头 */
+.sidebar-pane summary .caret {
+  opacity: 0.5;
+  transition: opacity 0.15s;
+}
+.sidebar-pane summary:hover .caret {
+  opacity: 1;
+}

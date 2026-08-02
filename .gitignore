@@ -26,3 +26,6 @@ AGENTS.md
 
 # Local templates
 templates/
+
+# Claude/Hermes agent skills (local)
+.claude/

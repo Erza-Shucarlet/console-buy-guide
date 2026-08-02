@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chubbyducky.com/sitemap-index.xml

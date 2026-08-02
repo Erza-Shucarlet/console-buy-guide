@@ -1,0 +1,10 @@
+# 游戏机选购指南
+
+> 帮你选到最合适的游戏主机——Nintendo Switch 一代、二代选购攻略，面向中文玩家。
+
+## 页面
+
+- [首页](https://chubbyducky.com/): 游戏机选购指南首页，快速导航到各主机选购文章
+- [Switch 选购指南](https://chubbyducky.com/switch/): Nintendo Switch 总览，一代与二代差异速览
+- [Switch 一代](https://chubbyducky.com/switch/gen-1/): 初代/续航版/OLED/Lite 四型号详解，含国行避坑指南
+- [Switch 二代](https://chubbyducky.com/switch/gen-2/): Switch 2 全面升级解析，含涨价信息与购买建议
