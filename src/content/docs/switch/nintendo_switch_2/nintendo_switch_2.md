@@ -95,7 +95,7 @@ Switch 2 部分实体卡带是**"钥匙卡"**——卡带本身不含游戏数�
 
 ![钥匙卡标识](/switch2-keycard.webp)
 
-💡 256GB 机身存储在钥匙卡 + 数字版游戏的组合下可能不够用，重度玩家建议备好 microSD 卡。
+💡 Switch 2 **仅支持 microSD Express 卡**（普通 microSD 不兼容）。256GB 机身存储在钥匙卡 + 数字版游戏的组合下可能不够用，重度玩家建议提前备好 microSD Express 卡。
 
 ---
 
