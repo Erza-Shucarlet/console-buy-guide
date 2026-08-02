@@ -11,17 +11,22 @@ Nintendo Switch 自 2017 年发售以来，已经历了**一代四个型号**和
 
 ## 快速导航
 
-| 你想了解 | 跳转 |
-|----------|------|
-| 一代四个型号的区别（初代/续航/OLED/Lite） | [Nintendo Switch 一代](/switch/nintendo_switch_1/nintendo_switch_1/) |
-| 二代相比一代的全面升级 | [Nintendo Switch 二代](/switch/nintendo_switch_2/nintendo_switch_2/) |
+import { Card, CardGrid, Aside } from '@astrojs/starlight/components';
 
-## 一句话建议
+<CardGrid stagger>
+  <Card title="📦 Switch 一代回顾" icon="puzzle">
+    初代 / 续航版 / OLED / Lite，四个型号一文看懂
+    [查看一代介绍 →](/switch/nintendo_switch_1/nintendo_switch_1/)
+  </Card>
+  <Card title="🎮 Switch 二代详解" icon="information">
+    4K 输出 · 磁吸手柄 · 涨价预警，全面了解最新旗舰
+    [查看二代详解 →](/switch/nintendo_switch_2/nintendo_switch_2/)
+  </Card>
+</CardGrid>
 
-- 🆕 **没买过 Switch** → 直接入 [Switch 2](/switch/nintendo_switch_2/nintendo_switch_2/)，一步到位
-- 💰 **预算有限** → [Switch 续航版](/switch/nintendo_switch_1/nintendo_switch_1/#2-nintendo-switch-续航版) 或 [Lite](/switch/nintendo_switch_1/nintendo_switch_1/#4-nintendo-switch-lite) 二手性价比极高
-- 🎮 **纯掌机玩家** → [Switch Lite](/switch/nintendo_switch_1/nintendo_switch_1/#4-nintendo-switch-lite) 轻便便宜
-- 🚫 **不要碰** → 国行版和初代 Switch，前者服务已关闭，后者性能落后且易被破解
+<Aside type="tip" title="🎯 一句话建议">
+**没买过 Switch → 直接入二代**；预算有限 → 一代续航版/Lite 二手性价比极高。千万不要碰国行和初代！
+</Aside>
 
 ## 两代核心差异速览
 
