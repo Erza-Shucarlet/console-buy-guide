@@ -32,3 +32,6 @@ templates/
 
 # Obsidian workspace (local)
 .obsidian/
+
+# Raw AI-generated source images (converted webp versions live in src/content/docs/images/)
+raw-assets/
