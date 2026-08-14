@@ -1,5 +1,5 @@
 ---
-title: 一代限定机图鉴
+title: Switch 一代限定机图鉴
 description: Nintendo Switch 一代（续航版/初代）限定机全收录：动森/奥德赛/去皮去伊/大乱斗等 14 款，了解各款特色和收藏价值。
 sidebar:
   order: 2

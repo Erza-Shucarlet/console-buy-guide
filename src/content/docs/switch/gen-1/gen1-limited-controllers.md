@@ -1,5 +1,5 @@
 ---
-title: 一代限定手柄图鉴
+title: Switch 一代限定手柄图鉴
 description: Nintendo Switch 一代限定手柄/Joy-Con 全收录：FC/异度之刃/Splatoon/怪猎/大乱斗/王国之泪/天空之剑等 9 款。
 sidebar:
   order: 4

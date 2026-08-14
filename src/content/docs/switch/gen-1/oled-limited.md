@@ -1,5 +1,5 @@
 ---
-title: OLED 限定机图鉴
+title: Nintendo Switch OLED 限定机图鉴
 description: Nintendo Switch OLED 限定机全收录：红蓝/白色/马里奥红/朱紫/Splatoon 3/王国之泪，了解各款特色和收藏价值。
 sidebar:
   order: 3
