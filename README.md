@@ -30,18 +30,26 @@ console-buy-guide/
 │   ├── favicon-32.png        # 32px favicon
 │   ├── apple-touch-icon.png  # iOS 主屏幕图标（180px）
 │   ├── image-backups/        # 旧版图片备份（不删除）
-│   └── *.webp                # 内容图片（WebP，q85）
+│   └── robots.txt / llms.txt # SEO / LLM 相关
+├── raw-assets/               # 原始 PNG/JPG 素材（.gitignore，不删除）
 ├── src/
 │   ├── assets/               # Astro 处理资源（hero 图等）
 │   │   └── houston.webp      # 首页 hero 图（胖黄鸭透明头像）
 │   ├── content/
 │   │   └── docs/             # 内容页面（Starlight 自动路由）
+│   │       ├── images/       # 内容图片（WebP，q85，集中管理）
 │   │       ├── index.mdx     # 根首页（splash 模板 + hero + CardGrid）
 │   │       ├── contact.md    # 联系页
 │   │       └── switch/       # Switch 板块
-│   │           ├── switch-index.mdx   # Switch 总览（splash 模板）
-│   │           ├── gen-1/guide.md     # 一代四型号详解
-│   │           └── gen-2/guide.md     # 二代详解 + 涨价信息
+│   │           ├── switch-index.mdx               # Switch 总览（splash 模板）
+│   │           ├── gen-1/                         # 一代回顾
+│   │           │   ├── guide.md                   # 一代四型号详解
+│   │           │   ├── gen1-limited.md            # 一代限定机图鉴
+│   │           │   ├── oled-limited.md            # OLED 限定机图鉴
+│   │           │   └── gen1-limited-controllers.md  # 一代限定手柄图鉴
+│   │           └── gen-2/                         # 二代详解
+│   │               ├── guide.md                   # 二代详解 + 涨价信息
+│   │               └── faq.md                     # 常见问题 Q&A
 │   └── styles/
 │       └── custom.css        # 全站自定义样式
 └── dist/                     # 构建输出（Cloudflare Pages 部署此目录）
@@ -93,8 +101,8 @@ npx astro dev stop            # 停止
 ### 图片
 
 - **格式**: WebP（cwebp -q 85 转换）
-- **位置**: `public/` 目录，用绝对路径引用 `/image.webp`
-- **备份**: 旧版图片移到 `public/image-backups/`，不删除
+- **位置**: `src/content/docs/images/`，文章用相对路径 `../../images/xxx.webp` 引用（从 `switch/gen-1/`、`switch/gen-2/` 等二级目录出发）
+- **备份**: 原始 PNG/JPG 保留在 `raw-assets/`（.gitignore），旧版 WebP 移 `public/image-backups/`，都不删除
 - **AI 生图**: 胜算云 gpt-image-2，扁平矢量风格
 
 ### 更新日期
@@ -131,12 +139,12 @@ Push 到 `main` 分支 → Cloudflare Pages 自动构建部署。
 | 改了 CSS 没效果 | 重启 dev server：`npx astro dev stop && npx astro dev` |
 | .md 中 `:::` 不渲染 | 检查是否在 .mdx 中误用了 `import { Aside }` |
 | 侧边栏标题不对 | autogenerate 读的是 frontmatter `title`，不是 `sidebar.label` |
-| 图片不显示 | 确认在 `public/` 目录，路径用绝对路径 `/xxx.webp` |
+| 图片不显示 | 确认在 `src/content/docs/images/` 目录，路径用相对路径 `../../images/xxx.webp` |
 | 构建报图片错误 | 检查 `src/assets/` 下的图片是否被正确引用 |
 
 ## 🤝 贡献
 
-内容在 `src/content/docs/` 下，Markdown 格式。图片用 WebP 放 `public/`。改完提 PR。
+内容在 `src/content/docs/` 下，Markdown 格式。图片用 WebP 放 `src/content/docs/images/`。改完提 PR。
 
 ---
 
