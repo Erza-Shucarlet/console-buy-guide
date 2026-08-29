@@ -46,7 +46,8 @@ console-buy-guide/
 │   │           │   ├── guide.md                   # 一代四型号详解
 │   │           │   ├── gen1-limited.md            # 一代限定机图鉴
 │   │           │   ├── oled-limited.md            # OLED 限定机图鉴
-│   │           │   └── gen1-limited-controllers.md  # 一代限定手柄图鉴
+│   │           │   ├── gen1-limited-controllers.md  # 一代限定手柄图鉴
+│   │           │   └── gen1-jailbreak.md          # 破解科普（反对破解）
 │   │           └── gen-2/                         # 二代详解
 │   │               ├── guide.md                   # 二代详解 + 涨价信息
 │   │               └── faq.md                     # 常见问题 Q&A
