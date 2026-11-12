@@ -31,8 +31,8 @@ export default defineConfig({
 					label: '🎮 Nintendo Switch',
 					items: [
 						{ label: '📋 选购指南', link: '/switch/switch-index/' },
-						{ label: '🔍 二手验机', link: '/switch/used/' },
-						{ label: '📜 编辑立场', link: '/editorial-policy/' },
+						{ label: '⚖️ 一代二代对比', link: '/switch/compare/' },
+						{ label: '🌍 区域与版本', link: '/switch/region/' },
 						{
 							label: '🕹️ 一代回顾',
 							items: [{ autogenerate: { directory: 'switch/gen-1' } }],
@@ -41,6 +41,23 @@ export default defineConfig({
 							label: '🚀 二代详解',
 							items: [{ autogenerate: { directory: 'switch/gen-2' } }],
 						},
+						{
+							label: '🎮 游戏与购买',
+							items: [{ autogenerate: { directory: 'switch/games' } }],
+						},
+						{ label: '🔧 故障与维修', link: '/switch/repair/' },
+						{
+							label: '🧪 技术观察',
+							items: [{ autogenerate: { directory: 'switch/tech' } }],
+						},
+						{
+							label: '🔍 二手专区',
+							items: [
+								{ label: '二手验机指南', link: '/switch/used/' },
+								{ label: '二手价格与砍价', link: '/switch/used/price/' },
+							],
+						},
+						{ label: '📜 编辑立场', link: '/editorial-policy/' },
 					],
 				},
 				{ label: '✉️ 联系胖黄鸭', link: '/contact/' },

@@ -135,6 +135,12 @@
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, .18);
 }
+/* 技术类文章里的宽幅示意图（16:9）用满正文宽度，420px 会看不清细节 */
+.sl-markdown-content img[src*="ai-porting"] {
+  max-width: 100%;
+  box-shadow: none;
+  border: 1px solid var(--sl-color-hairline);
+}
 :root[data-theme='light'] .sl-markdown-content img {
   box-shadow: 0 4px 16px rgba(0, 0, 0, .08);
 }
@@ -176,6 +182,10 @@
   color: #fff;
   font-weight: 600;
   border: none;
+  white-space: nowrap;
+}
+/* 首列多是「项目名」这类短标签，别让它被折成两行 */
+.sl-markdown-content tbody td:first-child {
   white-space: nowrap;
 }
 :root[data-theme='light'] .sl-markdown-content thead th {
