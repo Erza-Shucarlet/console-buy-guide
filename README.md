@@ -104,7 +104,7 @@ npx astro dev stop            # 停止
 - **格式**: WebP（cwebp -q 85 转换）
 - **位置**: `src/content/docs/images/`，文章用相对路径 `../../images/xxx.webp` 引用（从 `switch/gen-1/`、`switch/gen-2/` 等二级目录出发）
 - **备份**: 原始 PNG/JPG 保留在 `raw-assets/`（.gitignore），旧版 WebP 移 `public/image-backups/`，都不删除
-- **AI 生图**: 胜算云 gpt-image-2，扁平矢量风格
+- **AI 生图**: 胜算云 gpt-image-2.6-flare，扁平矢量风格
 
 ### 更新日期
 
