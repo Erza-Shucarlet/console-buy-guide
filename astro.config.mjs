@@ -9,6 +9,13 @@ export default defineConfig({
 		starlight({
 			title: '🎮 胖黄鸭的游戏机选购指南',
 			customCss: ['/src/styles/custom.css'],
+			// 自定义组件：目录标题降级为 role=heading（不占 H2）、页脚加政策链接、
+			// <head> 追加 Article / BreadcrumbList 结构化数据
+			components: {
+				TableOfContents: './src/components/TableOfContents.astro',
+				Footer: './src/components/Footer.astro',
+				Head: './src/components/Head.astro',
+			},
 			defaultLocale: 'root',
 			locales: {
 				root: { label: '简体中文', lang: 'zh-CN' },
@@ -24,6 +31,8 @@ export default defineConfig({
 					label: '🎮 Nintendo Switch',
 					items: [
 						{ label: '📋 选购指南', link: '/switch/switch-index/' },
+						{ label: '🔍 二手验机', link: '/switch/used/' },
+						{ label: '📜 编辑立场', link: '/editorial-policy/' },
 						{
 							label: '🕹️ 一代回顾',
 							items: [{ autogenerate: { directory: 'switch/gen-1' } }],

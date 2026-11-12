@@ -163,10 +163,12 @@
   overflow: hidden;
   border: 1px solid var(--sl-color-hairline);
   box-shadow: 0 2px 8px rgba(0, 0, 0, .10);
-  display: block;
-  overflow-x: auto;
-  width: fit-content;
+  /* display:block 会让表格退化成 fit-content 宽度，导致右侧留白；
+     用 table 布局 + 100% 宽度，让表格真正撑满正文 */
+  display: table;
+  width: 100%;
   max-width: 100%;
+  table-layout: auto;
   margin-inline: auto;
 }
 .sl-markdown-content thead th {

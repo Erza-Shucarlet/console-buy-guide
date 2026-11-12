@@ -1,0 +1,65 @@
+---
+const { head, entry, lastUpdated, hasSidebar } = Astro.locals.starlightRoute;
+
+const site = Astro.site ?? new URL('https://chubbyducky.com');
+const path = Astro.url.pathname.replace(/\/+$/, '/');
+const isHome = path === '/';
+const canonical = new URL(path, site).href;
+
+const data = entry?.data ?? {};
+const pageTitle = (data as any).title ?? '';
+const pageDescription = (data as any).description ?? '';
+
+// 面包屑：首页 → （/switch/ 层级时补一层）→ 当前页
+const switchLabel = 'Nintendo Switch';
+const switchUrl = new URL('/switch/', site).href;
+const crumbs: { name: string; url: string }[] = [
+	{ name: '首页', url: new URL('/', site).href },
+];
+if (path.startsWith('/switch/')) crumbs.push({ name: switchLabel, url: switchUrl });
+if (!isHome) crumbs.push({ name: pageTitle, url: canonical });
+
+const breadcrumbLd = {
+	'@context': 'https://schema.org',
+	'@type': 'BreadcrumbList',
+	itemListElement: crumbs.map((c, i) => ({
+		'@type': 'ListItem',
+		position: i + 1,
+		name: c.name,
+		item: c.url,
+	})),
+};
+
+const websiteLd = {
+	'@context': 'https://schema.org',
+	'@type': 'WebSite',
+	name: '胖黄鸭的游戏机选购指南',
+	alternateName: 'chubbyducky.com',
+	url: new URL('/', site).href,
+	inLanguage: 'zh-CN',
+};
+
+const articleLd = {
+	'@context': 'https://schema.org',
+	'@type': 'Article',
+	headline: pageTitle,
+	description: pageDescription,
+	inLanguage: 'zh-CN',
+	mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+	author: { '@type': 'Organization', name: '胖黄鸭' },
+	publisher: {
+		'@type': 'Organization',
+		name: '胖黄鸭的游戏机选购指南',
+		url: new URL('/', site).href,
+	},
+	...(lastUpdated ? { dateModified: new Date(lastUpdated).toISOString() } : {}),
+};
+
+const schemas = isHome ? [websiteLd] : [articleLd, breadcrumbLd];
+---
+
+{head.map(({ tag: Tag, attrs, content }) => <Tag {...attrs} set:html={content} />)}
+
+{schemas.map((ld) => (
+	<script type="application/ld+json" set:html={JSON.stringify(ld)} />
+))}
